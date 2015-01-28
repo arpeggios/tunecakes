@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html ng-app="tunecakes">
+<head>
+	<meta name="viewport" content="initial-scale=1.0"/>
+	<title>Tunecakes</title>
+	<!-- online: -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- offline: -->
+	<!-- <link rel="stylesheet" type="text/css" href="libraries/bootstrap-3.3.2-dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- online: -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- offline: -->
+	<!-- <script type="text/javascript" src="libraries/jquery-1.11.0.js"></script> -->
+	<script>
+		$(document).ready(function() {
+			windowResize();
+		});
+		$(window).resize(function() {
+			windowResize();
+		});
+	</script>
+</head>
+<body>
+	<!-- Above the fold -->
+	<div class="above-fold-img"></div> 
+	<div class="above-fold">		
+		<!-- Login module -->
+		<div class="login">
+			<form class="form-inline frmLogin">
+			  <div class="form-group">
+			    <label class="sr-only" for="frmUsername">Username</label>
+			    <input type="text" class="form-control boxLogin" id="frmUsername" placeholder="Username">
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="frmPassword">Password</label>
+			    <input type="password" class="form-control boxLogin" id="frmPassword" placeholder="Password">
+			  </div>
+			  <br/>
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox"> Remember me
+			    </label>
+			  </div>
+			  <!-- Should there be a Submit button? -->
+			  <!-- <button type="submit" class="btn btn-default">Sign in</button> -->
+			</form>
+		</div> 
+		<!-- End Login module -->
+
+		<!-- This container centers the rest of the page under the login module: -->
+		
+		<div class="logo">
+			<img src="images/headphones_icon.png" class="title-icons" id="invite-icon-phones">
+			<h1 class="site-title">Tunecakes</h1>
+			<img src="images/guitar_icon.png" class="title-icons" id="invite-icon-guitar">
+			<img src="images/headphones_icon.png" class="cake-icons">
+			<img src="images/guitar_icon.png" class="cake-icons">
+			<p class="slogan">Do less work, get more music.</p>
+			<p class="invitation">Click <em><a href="#">here</a></em> to request an invitation.</p>
+
+		</div>
+
+		<!-- Search module: -->
+		<div class="search">
+			<form class="frmSearch">
+			  <div class="form-group has-feedback">
+			    <label class="sr-only" for="srchMusic">Search by music</label>
+			    <input type="text" class="form-control" id="srchMusic" placeholder="Genres, musicians, whatever!">
+			    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+			  </div>
+			  <div class="form-group">
+			    <label class="sr-only" for="srchLocation">Search by location</label>
+			    <input type="text" class="form-control" id="srchLocation" placeholder="VisitorCity, VisitorState/Country">
+			  </div>
+			  <input class="btn btn-default btnSearch" type="submit" value="Search">
+			</form>
+		</div>	<!-- End Search module -->
+		<p class="scroll">Scroll to learn more</p>
+	</div>	<!-- End .above-fold -->
+
+
+	<div class="below-fold">		
+		<div id="cont-description">
+			<div class="description">
+				
+				<hr class="hr-login-page" id="hr-1"/>
+				<p class="text-left" id="txt-descrip-1">Get automatic updates from your favorite musicians about new albums, concerts, etc.</p>
+				<img src="images/headphones.png" class="img-big-cakes" id="img-headphones">
+				<hr class="hr-login-page"/>
+				<p class="text-left" id="txt-descrip-2">Save time: Post to your other social media accounts straight from Tunecakes!
+				<br/>
+				Find your fans: Get a map of your fans!
+				</p>
+				<img src="images/guitar.png" class="img-big-cakes" id="img-guitar">
+			</div>	
+		</div> <!-- #cont-description -->
+		<hr class="hr-login-page"/>
+		<div class="jumbotron" id="jumbotron-small">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/VQFhd3X8p6g"></iframe>
+			</div>
+		</div>
+		<p class="invite"><a href="#">Get on the invite list here!</a></p>
+		<footer>
+			<a href="#">About</a>
+			<a href="#">Jobs</a>
+			<a href="#">Contact</a>
+			<a href="#">Partners</a>
+			<a href="#">Support</a>
+			<a href="#">Blog</a>
+		</footer>
+	</div> <!-- .below-fold -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/ui-bootstrap-tpls-0.12.0.js"></script>
+</body>
+</html>

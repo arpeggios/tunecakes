@@ -1,0 +1,501 @@
+/*Fixes a styling conflict between Angular and Bootstrap:*/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.container {
+	text-align: center;
+}
+
+body {
+	font-family: arial, sans-serif;
+	font-weight: lighter;
+	color: #222222;
+}
+
+.checkbox {
+	float: left;
+}
+.above-fold,.below-fold {
+	text-align: center;
+}
+
+.above-fold {
+	min-height: 540px;
+}
+
+.above-fold-img {
+	min-height: 540px;
+}
+
+.below-fold {
+	clear: both;
+	background-color: white;
+}
+
+.below-fold {
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.logo {
+	clear: both;
+	/*border: 1px solid black;*/
+}
+.site-title {
+
+	font-size: 103px;
+	margin-bottom: 0;
+	padding-top: 23px;
+	padding-left: 8px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+.title-icons {
+	display: none;
+}
+
+.cake-icons {
+	display: none;
+}
+
+.logo p {
+	font-size: 26px;
+	margin-top: -11px;
+	margin-bottom: 0px;
+}
+
+.logo a {
+	color: #222222;
+}
+
+.logo a:hover {
+	text-decoration: none;
+	color: #428bca;
+}
+
+.logo a:visited {
+	text-decoration: none;
+}
+
+.invitation {
+	display: none;
+}
+
+.description {
+	font-size: 26px;
+}
+
+.login {
+	float: right;
+	margin-right: 2%;
+	/*border: 1px solid black;*/
+}
+.invite-md {
+	display: none;
+}
+.frmLogin {
+	margin-top: 11px;
+	overflow: hidden;
+}
+
+input.boxLogin {
+	width: 100px !important;
+	height: 25px;
+	border-radius: 0;
+}
+
+.search {
+	margin: auto;
+	float: none;
+	margin-top: 72px;
+	width: 234px;
+}
+
+.glyphicon-search {
+	left: 0;
+	color: gray;
+}
+
+#srchMusic {
+	padding-left: 30px;
+	padding-right: 15px;
+}
+
+.frmSearch {
+	overflow: hidden;
+}
+
+.btnSearch {
+	height: 40px;
+	width: 140px;
+	font-size: 19px;
+	float: right;
+}
+
+.scroll {
+	margin-top: 56px;
+	margin-bottom: 0px;
+	font-size: 24px;
+}
+
+.hr-login-page {
+	margin-top: -3px;
+	/*margin-bottom: 5px;*/
+	border-top: 2px solid #1b3280;
+	width: 170px;
+}
+
+#cont-description {
+	clear: both;
+	margin: auto;
+}
+
+#txt-descrip-1 {
+	float: left;
+}
+
+#txt-descrip-2 {
+	float: right;
+}
+
+.img-big-cakes {
+	margin-bottom: 29px;
+}
+
+#img-headphones {
+	margin-top: 7px;
+}
+
+#img-guitar {
+	margin-right: -49px;
+	margin-top: 12px;
+	margin-bottom: 29px;
+}
+
+.jumbotron {
+	background-color: #4388cc;
+	border: 2px solid #1b3280;
+	margin: auto;
+	border-radius: 10px;
+	max-width: 798px;
+}
+
+#jumbotron-small {
+	margin-top: 27px;
+	padding: 23px;
+}
+
+.invite {
+	font-size: 45px;
+	margin-top: 31px;
+}
+
+footer {
+	font-size: 20px;
+	margin-top: 14px;
+	padding-bottom: 23px;
+	text-align: center;
+}
+
+.below-fold a {
+	color: black;
+}
+
+.below-fold a:hover {
+	text-decoration: none;
+	color: #428bca;
+}
+
+.below-fold a:visited {
+	text-decoration: none;
+}
+
+/*override Bootstrap's form-inline media query at 768px:*/
+/*Delete what isn'tneeded here*/
+@media (min-width: 0px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .form-inline .form-control-static {
+    display: inline-block;
+  }
+  .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .form-inline .input-group .input-group-addon,
+  .form-inline .input-group .input-group-btn,
+  .form-inline .input-group .form-control {
+    width: auto;
+  }
+  .form-inline .input-group > .form-control {
+    width: 100%;
+  }
+  .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .form-inline .radio label,
+  .form-inline .checkbox label {
+    padding-left: 0;
+  }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .form-inline .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+
+/*xxs:*/
+@media (max-width: 540px) {
+	.above-fold-img {
+		display: none;
+	}
+	.above-fold{
+		/*background-color: yellow;*/
+		height: 415px;
+		max-height: 415px;
+	}
+	.site-title {
+		font-size: 63px;
+	}
+	.logo p {
+		font-size: 19px;
+		margin-top: -4px;
+	}
+	.search {
+		width: 234px;
+	}
+	.below-fold {
+		padding-top: 0;
+	}
+	.description {
+		font-size: 17px;
+	}
+	.img-big-cakes {
+		width: 55%;
+	}
+	.invite {
+		font-size: 24px;
+	}
+	.below-fold {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	footer {
+		font-size: 16px;
+	}
+}
+
+/*xs:*/
+@media (min-width: 541px) and (max-width: 767px) {
+	body {
+		/*background-color: brown;*/
+	}
+	.above-fold-img {
+		background-image: url("images/b_and_s.jpg");
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		background-size: 180%;
+		background-position-y: 8%;
+		background-position-x: 40%;
+	}
+
+	#hr-1 {
+		display: none;
+	}
+	  .below-fold {
+	  	/*background-color: yellow;*/
+	  }
+	#cont-description {
+		max-width: 95%;
+	}
+	.description p {
+		font-size: 20px;
+	}
+	.search {
+		width: 234px;
+	}
+	.invite {
+		font-size: 32px;
+	}
+	.jumbotron {
+		max-width: 494px;
+	}
+}
+
+/*sm:*/
+  @media (min-width: 768px) and (max-width: 991px) {
+	body {
+		/*background-color: blue;*/
+	}
+	.above-fold-img {
+		background-image: url("images/b_and_s.jpg");
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		background-size: 138%;
+		background-position-y: 7%;
+		background-position-x: 21%;
+	}
+	#hr-1 {
+		display: none;
+	}
+	.below-fold {
+		/*background-color: yellow;*/
+	}
+	.jumbotron {
+		max-width: 494px;
+	}
+	footer {
+		margin-top: 45px;
+	}
+}
+
+/*md:*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.above-fold-img {
+		background-image: url("images/b_and_s.jpg");
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		background-size: 170%;
+
+		background-position-y: 41%;
+
+		background-position-x: 26%;
+	}
+	.invitation {
+		display: inline-block;
+	}
+	.invitation-md {
+		/*font-size: 26px;
+		margin-right: -10px;*/
+	}
+	.title-icons {
+		display: inline-block;
+		margin-top: -51px;
+	}
+	#invite-icon-phones {
+		margin-left: -45px;
+	}
+
+	#invite-icon-guitar {
+		margin-right: -48px;
+	}
+	#invite-icon-phones {
+		/*float: left;*/
+	}
+	#invite-icon-guitar {
+		/*float: right;*/
+	}
+	.logo p {
+		margin-top: 0;
+	}
+	.invite-md {
+		display: block;
+		width: 491px;
+		margin: auto;
+		padding-left: -8px;
+	}
+	#hr-1 {
+		display: none;
+	}
+	.description p {
+		max-width: 500px;
+		margin-top: 82px;
+	}
+	.scroll {
+		display: none;
+	}
+}
+
+/*lg:*/
+   @media (min-width: 1200px) {
+	.above-fold-img {
+		background-image: url("images/b_and_s.jpg");
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		opacity: 0.7;
+		background-size: 100%;
+		background-position-y: 37%;
+	}
+
+	.container {
+		margin-left: 0;
+		margin-right: 0;
+		text-align: left;
+	}
+	.invitation {
+		display: inline-block;
+	}
+
+	.logo {
+		text-align: left;
+		float: left;
+		max-width: 600px;
+		margin-left: 4%;
+	}
+	.cake-icons {
+		display: inline-block;
+		margin-left: 105px;
+	}
+	.site-title {
+		padding: 0;
+	}
+	.logo p {
+		margin-top: 0;
+		margin-left: 5px;
+	}
+	.search {
+		float: right;
+		margin-top: 132px;
+		margin-right: 2%;
+	}
+	.scroll {
+	display: none;
+	}
+	.description p {
+		max-width: 700px;
+		margin-top: 82px;
+	}
+	#hr-1 {
+		display: none;
+	}
+	.jumbotron {
+		width: 798px;
+	}
+}
+/*
+	xs: 0-767px
+	sm: 768-991px
+	md: 992-1199px
+	lg: 1200px +
+*/

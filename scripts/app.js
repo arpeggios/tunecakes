@@ -1,0 +1,14 @@
+(function(){
+	///////////////////////////////////
+	//VARIABLES
+	///////////////////////////////////
+	var app = angular.module('tunecakes', ['ui.bootstrap']);
+
+	///////////////////////////////////
+	//CONTROLLERS
+	///////////////////////////////////
+	app.controller('MainController', function(){
+		// I dunno what to put in here yet
+	});
+
+})();
