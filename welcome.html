@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="tunecakes">
+<head>
+	<meta name="viewport" content="initial-scale=1.0"/>
+	<title>Tunecakes</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			windowResize();
+		});
+		$(window).resize(function() {
+			windowResize();
+		});
+	</script>
+</head>
+<body>
+	<!-- Above the fold -->
+	<div class="above-fold-img"></div> 
+	<div class="above-fold">	
+		<p style="font-size: 50px">Welcome, user!</p>
+	</div>	<!-- .above-fold -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

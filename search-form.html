@@ -1,0 +1,15 @@
+<!-- The data is not bound to anything yet (ng-model) -->
+<div class="search">
+	<form name="searchForm" class="frmSearch" ng-controller="SearchController as searchCtrl" ng-submit="searchCtrl.success()" novalidate>
+	  <div class="form-group has-feedback">
+	    <label class="sr-only" for="srchMusic">Search by music</label>
+	    <input type="text" class="form-control" id="srchMusic" placeholder="Genres, musicians, whatever!" ng-model="userMusic">
+	    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+	  </div>
+	  <div class="form-group">
+	    <label class="sr-only" for="srchLocation">Search by location</label>
+	    <input type="text" class="form-control" id="srchLocation" placeholder="VisitorCity, VisitorState/Country" ng-model="userLocation">
+	  </div>
+	  <input class="btn btn-default btnSearch" type="submit" value="Search">
+	</form>
+</div>

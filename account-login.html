@@ -1,0 +1,23 @@
+<!-- The data is not bound to anything yet (ng-model) -->
+<div class="login">
+	<form name="loginForm" class="form-inline frm-login" ng-controller="LoginController as loginCtrl" ng-submit="loginForm.$valid && loginCtrl.success()" novalidate>
+		<div class="upper-login">
+			<div class="form-group">
+				<label class="sr-only" for="frmUsername">Username</label>
+				<input type="text" class="form-control boxLogin" id="frmUsername" placeholder="Username" ng-model="loginUsername" required>
+			</div>
+			<div class="form-group">
+				<label class="sr-only" for="frmPassword">Password</label>
+				<input type="password" class="form-control boxLogin" id="frmPassword" placeholder="Password" ng-model="loginPass" required>
+			</div>
+			<br/>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Remember me
+				</label>
+			</div>
+		</div> <!-- .upper-login -->
+		<input class="btn btn-default btn-log-in" type="submit" value="Log In"></input>
+		<!-- Should there be a Submit button? -->
+	</form>
+</div> 
